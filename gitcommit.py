@@ -28,7 +28,7 @@ def make_commit_on_date(commit_date, file_name, repo_path):
 
 def push_commits():
     """Push all commits to the remote repository."""
-    os.system('git push origin master')  # Replace 'main' with your branch name if different
+    os.system('git push')  # Replace 'main' with your branch name if different
 
 def generate_random_commits(num_commits, repo_path):
     """Generate random Git commits."""
@@ -43,8 +43,8 @@ def generate_random_commits(num_commits, repo_path):
     print(f"{num_commits} random commits created.")
 
 # Configuration
-repository_path = r'C:\Users\azeem\Desktop\GitTrick'  # Replace with your local repo path
-number_of_commits = 10  # Adjust the number of commits you want
+repository_path = r'C:\Users\azeem\Desktop\GitTrick\gittrick'  # Replace with your local repo path
+number_of_commits = int(input('Enter number of commits'))  # Adjust the number of commits you want
 
 # Run the script
 generate_random_commits(number_of_commits, repository_path)
